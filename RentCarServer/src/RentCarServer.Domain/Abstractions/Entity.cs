@@ -15,7 +15,7 @@ public abstract class Entity
     public bool isActive { get; private set; }
 
 
-    public DateTimeOffset CretedAt { get;private set;  }
+    public DateTimeOffset CreatedAt { get;private set;  }
     public IdentityId CreatedBy { get; private set; } = default!;
     public DateTimeOffset? UpdatedAt { get; private set; }
     public IdentityId? UpdatedBy { get; private set; } 
