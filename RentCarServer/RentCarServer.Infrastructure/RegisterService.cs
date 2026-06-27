@@ -16,7 +16,7 @@ public static class RegisterService
 
         services.AddDbContext<ApplicationDbContext>(opt =>
         {
-            string con = configuration.GetConnectionString("DefaultConnection")!;
+            string con = configuration.GetConnectionString("SqlServer")!;
             opt.UseSqlServer(con);
         });
 
