@@ -15,6 +15,7 @@ public sealed class ApplicationDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
         modelBuilder.ApplyGlobalFilters();
 
         base.OnModelCreating(modelBuilder);
@@ -22,6 +23,8 @@ public sealed class ApplicationDbContext : DbContext
     protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
     {
         configurationBuilder.Properties<IdentityId>().HaveConversion<IdentityIdValueConverter>();
+        configurationBuilder.Properties<decimal>().HaveColumnType("decimal(18,2)");
+        configurationBuilder.Properties<string>().HaveColumnType("varchar(MAX)");
         base.ConfigureConventions(configurationBuilder);
     }
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
