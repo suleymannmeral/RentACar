@@ -1,0 +1,111 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+artifacts/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# ASP.NET Core
+wwwroot/uploads/
+wwwroot/files/
+wwwroot/images/uploads/
+
+# Logs
+*.log
+logs/
+LogFiles/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# appsettings
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+
+# Secrets
+secrets.json
+
+# User Secrets
+**/secrets.json
+
+# Publish
+publish/
+publish_output/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!packages/build/
+
+# Node.js (if frontend exists)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test Results
+TestResults/
+*.trx
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# JetBrains
+_ReSharper*/
+*.DotSettings.user
+
+# Generated files
+Generated/
+GeneratedCode/
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Azure
+.publishsettings
+
+# Docker
+docker-compose.override.yml
+
+# IIS Express
+/.vs/
+/IISExpress/
+
+# Entity Framework
+*.mdf
+*.ldf

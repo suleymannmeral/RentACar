@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="RentCarServer.Application/RentCarServer.Application.csproj" Id="6a1ad8d1-1bb8-4c20-a7e7-9beb092780a5" />
+    <Project Path="src/RentCarServer.Domain/RentCarServer.Domain.csproj" />
+  </Folder>
+</Solution>
